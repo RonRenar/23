@@ -93,7 +93,7 @@ namespace _23
             this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
@@ -102,7 +102,7 @@ namespace _23
             this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F3;
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -111,7 +111,7 @@ namespace _23
             this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -120,7 +120,7 @@ namespace _23
             this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.X)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -167,7 +167,7 @@ namespace _23
             this.dotStyleMenu,
             this.dashDotDotStyleMenu});
             this.styleToolStripMenuItem.Name = "styleToolStripMenuItem";
-            this.styleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.styleToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.styleToolStripMenuItem.Text = "Style";
             // 
             // solidStyleMenu
@@ -175,27 +175,27 @@ namespace _23
             this.solidStyleMenu.Checked = true;
             this.solidStyleMenu.CheckState = System.Windows.Forms.CheckState.Checked;
             this.solidStyleMenu.Name = "solidStyleMenu";
-            this.solidStyleMenu.Size = new System.Drawing.Size(180, 22);
+            this.solidStyleMenu.Size = new System.Drawing.Size(138, 22);
             this.solidStyleMenu.Text = "Solid";
             this.solidStyleMenu.Click += new System.EventHandler(this.solidToolStripMenuItem_Click);
             // 
             // dotStyleMenu
             // 
             this.dotStyleMenu.Name = "dotStyleMenu";
-            this.dotStyleMenu.Size = new System.Drawing.Size(180, 22);
+            this.dotStyleMenu.Size = new System.Drawing.Size(138, 22);
             this.dotStyleMenu.Text = "Dot";
             // 
             // dashDotDotStyleMenu
             // 
             this.dashDotDotStyleMenu.Name = "dashDotDotStyleMenu";
-            this.dashDotDotStyleMenu.Size = new System.Drawing.Size(180, 22);
+            this.dashDotDotStyleMenu.Size = new System.Drawing.Size(138, 22);
             this.dashDotDotStyleMenu.Text = "DashDotDot";
             // 
             // colorToolStripMenuItem
             // 
             this.colorToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("colorToolStripMenuItem.Image")));
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.colorToolStripMenuItem.Text = "Color";
             // 
             // helpToolStripMenuItem
@@ -210,7 +210,7 @@ namespace _23
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // picDrawingSurface
@@ -220,6 +220,9 @@ namespace _23
             this.picDrawingSurface.Size = new System.Drawing.Size(700, 352);
             this.picDrawingSurface.TabIndex = 1;
             this.picDrawingSurface.TabStop = false;
+            this.picDrawingSurface.Click += new System.EventHandler(this.picDrawingSurface_Click);
+            this.picDrawingSurface.DoubleClick += new System.EventHandler(this.picDrawingSurface_DoubleClick);
+            this.picDrawingSurface.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picDrawingSurface_MouseClick);
             this.picDrawingSurface.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picDrawingSurface_MouseDown);
             this.picDrawingSurface.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picDrawingSurface_MouseMove);
             this.picDrawingSurface.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picDrawingSurface_MouseUp);

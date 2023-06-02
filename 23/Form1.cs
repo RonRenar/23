@@ -18,7 +18,8 @@ namespace _23
 
 
 
-        Form2 f = new Form2();
+        public Form2 f = new Form2();
+        
        
 
 
@@ -28,6 +29,7 @@ namespace _23
 Point oldLocation;
         Pen currentPen;
         Color historyColor;
+        
         int historyCounter;
         List<Image> History;
         public Form1()
@@ -213,7 +215,8 @@ Point oldLocation;
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-          
+            Form2 snk = new Form2();
+            snk.ShowDialog();
 
 
         }
@@ -298,6 +301,36 @@ Point oldLocation;
             dotStyleMenu.Checked = false;
             dashDotDotStyleMenu.Checked = false;
 
+        }
+
+        private void picDrawingSurface_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void picDrawingSurface_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (MouseButtons == MouseButtons.Right)
+            {
+
+
+                currentPen = new Pen(Color.White);
+
+
+
+            }
+        }
+
+        private void picDrawingSurface_DoubleClick(object sender, EventArgs e)
+        {
+            if (MouseButtons == MouseButtons.Right)
+            {
+
+               
+
+
+
+            }
         }
     }
 }
